@@ -1,0 +1,24 @@
+pkill -9 picom lxpolkit parcellite pcmanfm python
+# sxhkd &
+#[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources-gruvchad
+## Colors
+xrdb -merge ~/Xresources/.Xresources-gruvchad
+## Compositor
+picom --config ~/.config/picom/picom.conf &
+## Wallpaper
+~/.fehbg
+#slstatus &
+## yt-server
+# python ~/yt-local/server.py &
+## Authentication agent
+lxpolkit &
+## dbus instance
+dbus-launch --exit-with-session &
+## pcmanfm deamon
+pcmanfm -d &
+## clipboard
+parcellite &
+## bar
+~/.config/chadwm/scripts/bar.sh &
+## Window Manager
+while type dwm >/dev/null; do dwm && continue || break; done
