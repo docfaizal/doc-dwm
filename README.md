@@ -30,8 +30,12 @@ https://user-images.githubusercontent.com/59060246/223068062-d3c9847a-8713-42c7-
 
 ```
 git clone https://github.com/docfaizal/doc-dwm --depth 1  ~/.config/doc-dwm
-cd ~/.config/doc-dwm/dwm
+cd ~/.config/doc-dwm 
+cp -r Xresources ~/
+cp -r rofi ~/.config
+cd dwm
 sudo make clean install
+
 ```
 
 # Run chadwm
