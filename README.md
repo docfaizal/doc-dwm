@@ -30,7 +30,7 @@ https://user-images.githubusercontent.com/59060246/223068062-d3c9847a-8713-42c7-
 
 ```
 git clone https://github.com/docfaizal/doc-dwm --depth 1  ~/.config/doc-dwm
-cd ~/.config/chadwm/chadwm
+cd ~/.config/doc-dwm/dwm
 sudo make clean install
 ```
 
@@ -39,18 +39,18 @@ sudo make clean install
 ## With startx
 
 ```shell
-startx ~/.config/chadwm/scripts/dwm-autostart
+startx ~/.config/doc-dwm/scripts/dwm-autostart
 ```
 
 ## With sx
 
 ```shell
-sx sh ~/.config/chadwm/scripts/dwm-autostart```
+sx sh ~/.config/doc-dwm/scripts/dwm-autostart```
 
 (Make an alias for this :v)
 
 ```shell
-alias chadwm='startx ~/.config/chadwm/scripts/run.sh'
+alias d-dwm='startx ~/.config/doc-dwm/scripts/dwm-autostart'
 ```
 
 ## With Display Manager
@@ -65,7 +65,7 @@ sudo touch /usr/share/xsessions/doc-dwm.desktop
 [Desktop Entry]
 Name=doc-dwm
 Comment=dwm made beautiful 
-Exec=/home/user/.config/chadwm/scripts/./run.sh 
+Exec=$HOME/.config/doc-dwm/scripts/dwm-autostart 
 Type=Application 
 ```
 
