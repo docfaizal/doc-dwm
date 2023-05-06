@@ -8,20 +8,16 @@
 <img src="https://github.com/siduck/chadwm/blob/screenshots/screenshots/gruvchad.png">
 
 
-# Tag preview (while hovering tag icon)
-
-https://user-images.githubusercontent.com/59060246/223068062-d3c9847a-8713-42c7-bc9d-07247a0486a8.mp4
-
 # Requirements
 
 - dash (shell)
 - imlib2 
 - xsetroot package (status2d uses this to add colors on dwmbar)
 - JetbrainsMono Nerd Font or any nerd font but dont forget to set it in config.def.h
-- Make sure to setup your terminal's theme accordingly do chadwm's theme such as nord, onedark etc...
+- Make sure to setup your terminal's theme accordingly do doc-dwm's theme such as nord, onedark etc...
 
 ## Other requirements
-- picom
+- picom (dccsillag fork)
 - feh
 - acpi
 - rofi
@@ -35,7 +31,6 @@ cp -r Xresources ~/
 cp -r rofi ~/.config
 cd dwm
 sudo make clean install
-
 ```
 
 # Run chadwm
@@ -44,6 +39,7 @@ sudo make clean install
 
 ```shell
 startx ~/.config/doc-dwm/scripts/dwm-autostart
+
 ```
 
 ## With sx
