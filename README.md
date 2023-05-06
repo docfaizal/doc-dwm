@@ -1,4 +1,4 @@
-# chadwm (Initial look)
+# doc-dwm (Initial look)
 
 <img src="https://github.com/siduck/chadwm/blob/screenshots/screenshots/initial_look.png">
 <img src="https://github.com/siduck/chadwm/blob/screenshots/screenshots/col_layout.png">
@@ -33,7 +33,7 @@ cd dwm
 sudo make clean install
 ```
 
-# Run chadwm
+# Run doc-dwm
 
 ## With startx
 
@@ -76,7 +76,7 @@ Type=Application
 - You need to recompile dwm after every change you make to its source code.
 
 ```
-cd ~/.config/chadwm/chadwm
+cd ~/.config/doc-dwm/dwm
 rm config.h
 sudo make clean install
 ```
