@@ -147,9 +147,9 @@ static const Key keys[] = {
     {MODKEY|ControlMask,                XK_u,       spawn,
         SHCMD("maim | xclip -selection clipboard -t image/png")},
     {MODKEY,                            XK_u,       spawn,
-        SHCMD("maim --select | xclip -selection clipboard -t image/png")},
+        SHCMD("scrot -e 'mv $f ~/Pictures/Screenshots'")},
 
-    { MODKEY,                           XK_space,       spawn,          SHCMD("rofi -show drun")},
+    { MODKEY,                           XK_space,       spawn,          SHCMD("dmenu_run")},
     { MODKEY,                           XK_Return,  spawn,            SHCMD("st")},
     { MODKEY,                           XK_s,       spawn,          SHCMD("pcmanfm")},
 
@@ -277,7 +277,7 @@ static const Button buttons[] = {
     { ClkClientWin,         MODKEY,         Button1,        moveorplace,    {.i = 0} },
     { ClkClientWin,         MODKEY,         Button2,        togglefloating, {0} },
     { ClkClientWin,         MODKEY,         Button3,        resizemouse,    {0} },
-    { ClkClientWin,         ControlMask,    Button1,        dragmfact,      {0} },
+    { ClkClientWin,         ControlMask,    Button2,        dragmfact,      {0} },
     { ClkClientWin,         ControlMask,    Button3,        dragcfact,      {0} },
     { ClkTagBar,            0,              Button1,        view,           {0} },
     { ClkTagBar,            0,              Button3,        toggleview,     {0} },
